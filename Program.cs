@@ -26,6 +26,7 @@ namespace ReadMarks
 
                     foreach (var row in rows)
                     {
+                        //if class id not available, skip the row   
                         if (!row.Cell(2).IsEmpty())
                         {
                             var student = new Student
